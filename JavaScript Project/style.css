@@ -1,0 +1,118 @@
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+.card-img-top{
+    width: 100%;
+    height: 360px;
+    object-fit: contain;
+    object-position: center;
+}
+.card-img-top:hover{
+    scale: 1;
+    transition: 0.5s;
+}
+.about-product-img{
+    width: 100%;
+    height: 250px;
+}
+
+.product-details {
+    width: 100%; 
+    height: 600px; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product-details img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain; 
+  }
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 10px;
+}
+.carousel-inner {
+    transition: transform 1s linear !important;
+}
+.cart-list img{
+    width: 120px;
+    height: 120px;
+}
+.about-section p{
+    font-size: large
+}
+@media (max-width: 767px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-img img {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .product-info {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .product-info h3,
+    .product-info p,
+    .product-price,
+    .product-description {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+
+    .product-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .product-button .btn {
+        width: 80%;
+    }
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-behavior: smooth;
+  }
+  .carousel-container::-webkit-scrollbar {
+    display: none; 
+  }
+  .product-card {
+    min-width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
